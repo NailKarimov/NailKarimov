@@ -16,8 +16,8 @@ and turn test results into clear reports and quality metrics.
 | Project | What it shows |
 | --- | --- |
 | [3sMoneyTests](https://github.com/NailKarimov/3sMoneyTests) | Web quality audit of a fintech site: 61 Playwright tests, 9 documented defects, Allure report on GitHub Pages |
-| API tests · Restful Booker | *in progress* |
+| [openweather-api-tests](https://github.com/NailKarimov/openweather-api-tests) | API testing of OpenWeather: zod contracts, boundary values, unit-conversion decision table, auth, geocoding consistency; 40 tests, daily CI, Allure on GitHub Pages |
 
 ### Stack
 
-Playwright · TypeScript · Allure · GitHub Actions · axe-core · Docker
+Playwright · TypeScript · zod · Allure · GitHub Actions · axe-core · Docker
