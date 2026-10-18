@@ -16,7 +16,10 @@ and turn test results into clear reports and quality metrics.
 | Project | What it shows |
 | --- | --- |
 | [3sMoneyTests](https://github.com/NailKarimov/3sMoneyTests) | Web quality audit of a fintech site: 61 Playwright tests, 9 documented defects, Allure report on GitHub Pages |
-| [openweather-api-tests](https://github.com/NailKarimov/openweather-api-tests) | API testing of OpenWeather: zod contracts, boundary values, unit-conversion decision table, auth, geocoding consistency; 40 tests, daily CI, Allure on GitHub Pages |
+| [api-test-automation](https://github.com/NailKarimov/api-test-automation) | REST and GraphQL API testing: OpenWeather (zod contracts, boundary values, decision tables), Petstore CRUD on a private Docker container, Rick and Morty GraphQL with schema drift, security headers; 123 tests, daily CI, Allure on GitHub Pages |
+| [contract-testing-lab](https://github.com/NailKarimov/contract-testing-lab) | Three layers of contract testing on Petstore: Schemathesis property-based fuzzing, oasdiff contract drift, Pact consumer-driven contracts |
+| [microservices-testing](https://github.com/NailKarimov/microservices-testing) | 13-container Sock Shop in Docker: service and end-to-end tests, chaos, RabbitMQ events, OWASP API Top 10, k6 load tests; 94 tests |
+| [ledger-api-testing](https://github.com/NailKarimov/ledger-api-testing) | Own Ledger API on Fastify and PostgreSQL, tested with Testcontainers: atomic transfers, idempotency keys, concurrency, mutation check; 49 tests |
 
 ### Stack
 
