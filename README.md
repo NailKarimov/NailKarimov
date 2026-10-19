@@ -21,7 +21,7 @@ and turn test results into clear reports and quality metrics.
 | [microservices-testing](https://github.com/NailKarimov/microservices-testing) | 13-container Sock Shop in Docker: service and end-to-end tests, chaos, RabbitMQ events, OWASP API Top 10, k6 load tests; 94 tests |
 | [ledger-api-testing](https://github.com/NailKarimov/ledger-api-testing) | Own Ledger API on Fastify and PostgreSQL, tested with Testcontainers: atomic transfers, idempotency keys, concurrency, mutation check; OAuth 2.0 / JWT with its own authorization server (PKCE, forged tokens, BOLA); 119 tests |
 | [api-protocols-testing](https://github.com/NailKarimov/api-protocols-testing) | Beyond REST on our own FX quotes service: gRPC (all four call kinds, deadlines, status codes, health, reflection, buf breaking checks), WebSocket and SSE (resume without gaps, heartbeats, close codes); 79 tests |
-| [ai-api-testing](https://github.com/NailKarimov/ai-api-testing) | Testing AI-facing APIs: an MCP server of our own over stdio and Streamable HTTP (tool schemas, errors a model can act on, progress and cancellation, OAuth scopes, tool-poisoning guards, MCP Inspector as an independent client); 100 tests |
+| [ai-api-testing](https://github.com/NailKarimov/ai-api-testing) | Testing AI-facing APIs: an MCP server of our own over stdio and Streamable HTTP (tool schemas, errors a model can act on, progress and cancellation, OAuth scopes, tool-poisoning guards, MCP Inspector as an independent client) and an LLM endpoint on Claude (plumbing tests on a fake API, evals for correctness, groundedness and prompt injection); 120 tests + 13 evals |
 
 ### Stack
 
