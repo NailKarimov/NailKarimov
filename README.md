@@ -19,7 +19,8 @@ and turn test results into clear reports and quality metrics.
 | [api-test-automation](https://github.com/NailKarimov/api-test-automation) | REST and GraphQL API testing: OpenWeather (zod contracts, boundary values, decision tables), Petstore CRUD on a private Docker container, Rick and Morty GraphQL with schema drift, security headers; 123 tests, daily CI, Allure on GitHub Pages |
 | [contract-testing-lab](https://github.com/NailKarimov/contract-testing-lab) | Three layers of contract testing on Petstore: Schemathesis property-based fuzzing, oasdiff contract drift, Pact consumer-driven contracts |
 | [microservices-testing](https://github.com/NailKarimov/microservices-testing) | 13-container Sock Shop in Docker: service and end-to-end tests, chaos, RabbitMQ events, OWASP API Top 10, k6 load tests; 94 tests |
-| [ledger-api-testing](https://github.com/NailKarimov/ledger-api-testing) | Own Ledger API on Fastify and PostgreSQL, tested with Testcontainers: atomic transfers, idempotency keys, concurrency, mutation check; 49 tests |
+| [ledger-api-testing](https://github.com/NailKarimov/ledger-api-testing) | Own Ledger API on Fastify and PostgreSQL, tested with Testcontainers: atomic transfers, idempotency keys, concurrency, mutation check; OAuth 2.0 / JWT with its own authorization server (PKCE, forged tokens, BOLA); 119 tests |
+| [api-protocols-testing](https://github.com/NailKarimov/api-protocols-testing) | Beyond REST on our own FX quotes service: gRPC unary and all three streaming kinds, deadlines, status codes, health and reflection, buf lint and breaking checks of the .proto; 47 tests |
 
 ### Stack
 
