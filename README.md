@@ -23,7 +23,11 @@ and turn test results into clear reports and quality metrics.
 | [api-protocols-testing](https://github.com/NailKarimov/api-protocols-testing) | Beyond REST on our own FX quotes service: gRPC (all four call kinds, deadlines, status codes, health, reflection, buf breaking checks), WebSocket and SSE (resume without gaps, heartbeats, close codes); 79 tests |
 | [ai-api-testing](https://github.com/NailKarimov/ai-api-testing) | Testing AI-facing APIs: an MCP server of our own over stdio and Streamable HTTP (tool schemas, errors a model can act on, progress and cancellation, OAuth scopes, tool-poisoning guards, MCP Inspector as an independent client) and an LLM endpoint on Claude (plumbing tests on a fake API, evals for correctness, groundedness and prompt injection); 120 tests + 13 evals |
 | [ui-e2e-testing](https://github.com/NailKarimov/ui-e2e-testing) | UI end-to-end on OWASP Juice Shop: the customer journey from search to order history, Page Objects with role locators, API login, Chromium / Firefox / WebKit / Pixel 7 / iPhone 15, traces and videos in Allure, flaky-test reporting; accessibility to WCAG 2.2 AA (axe with a ratchet, Pa11y as a second engine, keyboard-only checkout, reflow at 320 px) visual regression with baselines from Playwright's Docker image, and Lighthouse CI performance budgets with INP from a user flow; 22 defects found (DOM XSS, nameless controls, contrast); 217 tests + 12 screenshots |
+| [python-testing](https://github.com/NailKarimov/python-testing) | **Python.** Own Bookshop API (FastAPI + SQLite): pytest + httpx, Hypothesis properties against an independent oracle, Schemathesis contract fuzzing, database integration, security, Locust load with p95 budgets (found a threading bug no functional test saw); 77 tests, 11/11 planted bugs caught |
+| [go-testing](https://github.com/NailKarimov/go-testing) | **Go.** Two services of our own behind a fault-injecting proxy: timeouts, idempotent retries, circuit breaker, concurrency under `-race`, native fuzzing, benchmarks; 14/14 planted bugs caught, 94.5 % coverage |
 
 ### Stack
 
-Playwright · TypeScript · zod · Allure · GitHub Actions · axe-core · Docker
+Languages: TypeScript · Python · Go
+
+Playwright · zod · pytest · Hypothesis · Locust · k6 · Allure · GitHub Actions · axe-core · Docker
