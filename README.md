@@ -1,11 +1,14 @@
 # Nail Karimov — Senior QA Automation Engineer
 
-15 years in software testing, 6 of them building test automation. I design test strategies, build maintainable
-automation frameworks, and turn test results into clear reports and quality metrics.
+ISTQB Certified Tester (Foundation Level), based in Riga. 14 years in software testing, 7 of them in test
+automation, in banking and fintech, telecom billing, automotive e-commerce and access-control systems. I design
+test strategies, build maintainable automation frameworks, and turn test results into clear reports and quality
+metrics.
 
 | | |
 | --- | --- |
-| **Languages** | TypeScript · Python · Java · C# · Go · Kotlin |
+| **Experience** | SEB (test automation, C# and SQL, regulatory reporting) · Sun Finance (QA lead, PHP automation for loan platforms in 8 countries) · Tele2 (E2E billing migration) · Complevo for Mercedes-Benz · fintech and access-control platforms |
+| **Programming languages** | TypeScript · Python · Java · C# · Go · Kotlin · SQL · PHP |
 | **Testing** | UI and mobile · REST, GraphQL, gRPC, WebSocket, MCP · contracts · databases · security · accessibility · performance and load · chaos · BDD |
 | **Standards** | ISO/IEC/IEEE 29119 · ISO/IEC 25010 · WCAG 2.2 AA / EN 301 549 · OWASP API Top 10 · OAuth 2.0 · Core Web Vitals |
 | **Portfolio** | 13 repositories, all in GitHub Actions with published reports. [Testing map](testing-map.md) ([interactive](https://nailkarimov.github.io/api-test-automation/testing-map.html)) · [toolbox](https://nailkarimov.github.io/api-test-automation/toolbox.html) |
@@ -64,4 +67,8 @@ holds the [portfolio standard](https://github.com/NailKarimov/qa-project-templat
 
 Playwright · REST Assured · pytest · NUnit · JUnit · Go `testing` · Espresso · Appium · Hypothesis · Schemathesis ·
 Pact · WireMock · Cucumber · Reqnroll · Bruno · k6 · Locust · Lighthouse CI · axe-core · Pa11y · Testcontainers ·
-Docker · Prometheus · Grafana · Allure · GitHub Actions
+Docker · Prometheus · Grafana · Allure · GitHub Actions · Jira · Zephyr · Confluence · Azure Pipelines · Jenkins
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/karimovnail) · English, Russian, Latvian
