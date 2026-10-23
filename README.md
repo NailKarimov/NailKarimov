@@ -15,8 +15,9 @@ automation frameworks, and turn test results into clear reports and quality metr
 - **A system I can look inside.** Most projects test a service written for them, or a private copy in Docker
   instead of a shared sandbox. The tests can then check what was really stored, move the clock, and forge
   tokens.
-- **Proof that the tests work.** In every project, bugs are planted on purpose, one at a time, and the tables show
-  which test caught each one.
+- **Proof that the tests work.** Where the system is my own, bugs are planted on purpose, one at a time, and the
+  tables show which test caught each one. On third-party systems, every defect found is pinned by a test that
+  turns red when the defect is fixed.
 - **One layout.** Every README follows the same order: at a glance, what is tested, findings, running it,
   structure, CI, documentation. Each repository has a test plan and a test summary report (ISO/IEC/IEEE 29119-3),
   a text guide and an interactive guide for every tool.
