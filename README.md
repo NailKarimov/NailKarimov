@@ -1,40 +1,66 @@
 # Nail Karimov — Senior QA Automation Engineer
 
-15 years in software testing, 6 of them building test automation.
-I design test strategies, build maintainable automation frameworks
-and turn test results into clear reports and quality metrics.
+15 years in software testing, 6 of them building test automation. I design test strategies, build maintainable
+automation frameworks, and turn test results into clear reports and quality metrics.
 
-### Focus
-
-- UI and API test automation · Page Object, fixtures, CI-ready suites
-- Accessibility (WCAG 2.2 / EN 301 549), performance (Core Web Vitals),
-  privacy compliance (GDPR consent)
-- Reporting and CI: Allure, GitHub Actions
-
-### Portfolio
-
-Which types of testing are covered, against which standards, and where: [testing map](testing-map.md) ·
-[interactive version](https://nailkarimov.github.io/api-test-automation/testing-map.html).
-
-
-| Project | What it shows |
+| | |
 | --- | --- |
-| [3sMoneyTests](https://github.com/NailKarimov/3sMoneyTests) | Web quality audit of a fintech site: 61 Playwright tests, 9 documented defects, Allure report on GitHub Pages |
-| [api-test-automation](https://github.com/NailKarimov/api-test-automation) | REST and GraphQL API testing: OpenWeather (zod contracts, boundary values, decision tables), Petstore CRUD on a private Docker container, Rick and Morty GraphQL with schema drift, security headers, a Bruno collection run in CI; 123 tests + 18 Bruno requests, daily CI, Allure on GitHub Pages |
-| [contract-testing-lab](https://github.com/NailKarimov/contract-testing-lab) | Three layers of contract testing on Petstore: Schemathesis property-based fuzzing, oasdiff contract drift, Pact consumer-driven contracts |
-| [microservices-testing](https://github.com/NailKarimov/microservices-testing) | 13-container Sock Shop in Docker: service and end-to-end tests, chaos, RabbitMQ events, OWASP API Top 10, k6 load tests (closed and open models) with metrics in Prometheus and a Grafana dashboard per run; 94 tests |
-| [ledger-api-testing](https://github.com/NailKarimov/ledger-api-testing) | Own Ledger API on Fastify and PostgreSQL, tested with Testcontainers: atomic transfers, idempotency keys, concurrency, mutation check; OAuth 2.0 / JWT with its own authorization server (PKCE, forged tokens, BOLA); 119 tests |
-| [api-protocols-testing](https://github.com/NailKarimov/api-protocols-testing) | Beyond REST on our own FX quotes service: gRPC (all four call kinds, deadlines, status codes, health, reflection, buf breaking checks), WebSocket and SSE (resume without gaps, heartbeats, close codes); 79 tests |
-| [ai-api-testing](https://github.com/NailKarimov/ai-api-testing) | Testing AI-facing APIs: an MCP server of our own over stdio and Streamable HTTP (tool schemas, errors a model can act on, progress and cancellation, OAuth scopes, tool-poisoning guards, MCP Inspector as an independent client) and an LLM endpoint on Claude (plumbing tests on a fake API, evals for correctness, groundedness and prompt injection); 120 tests + 13 evals |
-| [ui-e2e-testing](https://github.com/NailKarimov/ui-e2e-testing) | UI end-to-end on OWASP Juice Shop: the customer journey from search to order history, Page Objects with role locators, API login, Chromium / Firefox / WebKit / Pixel 7 / iPhone 15, traces and videos in Allure, flaky-test reporting; accessibility to WCAG 2.2 AA (axe with a ratchet, Pa11y as a second engine, keyboard-only checkout, reflow at 320 px) visual regression with baselines from Playwright's Docker image, and Lighthouse CI performance budgets with INP from a user flow; 22 defects found (DOM XSS, nameless controls, contrast); 217 tests + 12 screenshots |
-| [python-testing](https://github.com/NailKarimov/python-testing) | **Python.** Own Bookshop API (FastAPI + SQLite): pytest + httpx, Hypothesis properties against an independent oracle, Schemathesis contract fuzzing, database integration, security, Locust load with p95 budgets (found a threading bug no functional test saw); 77 tests, 11/11 planted bugs caught |
-| [java-testing](https://github.com/NailKarimov/java-testing) | **Java.** Own Library API on the JDK: REST Assured + JUnit 5 (boundary tables, JSON Schema, a race for the last copies), WireMock as a failing external catalogue with call counts, Cucumber for the lending rules, Pact JVM consumer and provider with states; 89 tests, 88 % coverage, 14/14 planted bugs caught |
-| [dotnet-testing](https://github.com/NailKarimov/dotnet-testing) | **C#.** Own room-booking app on ASP.NET Core: NUnit + WebApplicationFactory in memory with a fake TimeProvider (overlap and boundary tables, ProblemDetails, a race for one slot), Reqnroll scenarios, Playwright for .NET on Kestrel; 54 tests, 100 % line coverage, 12/12 planted bugs caught |
-| [android-testing](https://github.com/NailKarimov/android-testing) | **Kotlin / Android.** Own split-the-bill app: JUnit on the JVM, Espresso and Appium 3 (UiAutomator2) on an API 30 emulator in GitHub Actions; 33 tests, 7/7 planted bugs caught |
-| [go-testing](https://github.com/NailKarimov/go-testing) | **Go.** Two services of our own behind a fault-injecting proxy: timeouts, idempotent retries, circuit breaker, concurrency under `-race`, native fuzzing, benchmarks; 14/14 planted bugs caught, 94.5 % coverage |
+| **Languages** | TypeScript · Python · Java · C# · Go · Kotlin |
+| **Testing** | UI and mobile · REST, GraphQL, gRPC, WebSocket, MCP · contracts · databases · security · accessibility · performance and load · chaos · BDD |
+| **Standards** | ISO/IEC/IEEE 29119 · ISO/IEC 25010 · WCAG 2.2 AA / EN 301 549 · OWASP API Top 10 · OAuth 2.0 · Core Web Vitals |
+| **Portfolio** | 13 repositories, all in GitHub Actions with published reports. [Testing map](testing-map.md) ([interactive](https://nailkarimov.github.io/api-test-automation/testing-map.html)) · [toolbox](https://nailkarimov.github.io/api-test-automation/toolbox.html) |
 
-### Stack
+## How every project is built
 
-Languages: TypeScript · Python · Java · C# · Go · Kotlin
+- **A system I can look inside.** Most projects test a service written for them, or a private copy in Docker
+  instead of a shared sandbox. The tests can then check what was really stored, move the clock, and forge
+  tokens.
+- **Proof that the tests work.** In every project, bugs are planted on purpose, one at a time, and the tables show
+  which test caught each one.
+- **One layout.** Every README follows the same order: at a glance, what is tested, findings, running it,
+  structure, CI, documentation. Each repository has a test plan and a test summary report (ISO/IEC/IEEE 29119-3),
+  a text guide and an interactive guide for every tool.
 
-Playwright · zod · Bruno · REST Assured · WireMock · Cucumber · Reqnroll · Pact · pytest · Espresso · Appium · Hypothesis · Locust · k6 · Allure · GitHub Actions · axe-core · Docker
+## Portfolio
+
+### API and contracts
+
+| Project | Language | What it shows |
+| --- | --- | --- |
+| [api-test-automation](https://github.com/NailKarimov/api-test-automation) | TypeScript | REST and GraphQL: OpenWeather (zod contracts, boundary values, decision tables), Petstore in a private container, Rick and Morty GraphQL with schema drift, security headers, a Bruno collection in CI; 123 tests + 18 Bruno requests |
+| [contract-testing-lab](https://github.com/NailKarimov/contract-testing-lab) | TypeScript | three layers of contract testing on Petstore: Schemathesis fuzzing (83 spec violations → 8 defects), oasdiff drift, Pact consumer-driven contracts |
+| [api-protocols-testing](https://github.com/NailKarimov/api-protocols-testing) | TypeScript | an own FX quotes service over gRPC (four call kinds, deadlines, buf breaking checks), WebSocket and SSE (resume without gaps); 79 tests, 26/26 planted bugs caught |
+| [ai-api-testing](https://github.com/NailKarimov/ai-api-testing) | TypeScript | an own MCP server (two transports, scopes, tool-poisoning guards) and an LLM endpoint on Claude (plumbing on a fake API, evals for groundedness and prompt injection); 126 tests + 13 evals |
+
+### Systems, data and security
+
+| Project | Language | What it shows |
+| --- | --- | --- |
+| [ledger-api-testing](https://github.com/NailKarimov/ledger-api-testing) | TypeScript | an own money service on PostgreSQL with Testcontainers (atomicity, idempotency, races) and an own OAuth 2.0 server (PKCE, 11 forged tokens, BOLA); 119 tests, 18/18 planted bugs caught |
+| [microservices-testing](https://github.com/NailKarimov/microservices-testing) | TypeScript | 13-container Sock Shop: service and end-to-end tests, chaos, RabbitMQ events, OWASP API Top 10, k6 load (closed and open models) with Grafana dashboards per run; 94 tests, 18 defects |
+
+### UI and mobile
+
+| Project | Language | What it shows |
+| --- | --- | --- |
+| [ui-e2e-testing](https://github.com/NailKarimov/ui-e2e-testing) | TypeScript | OWASP Juice Shop in 5 browsers and devices: Page Objects with role locators, API login, accessibility to WCAG 2.2 AA, visual regression, Lighthouse CI budgets; 217 tests, 22 defects including a DOM XSS |
+| [3sMoneyTests](https://github.com/NailKarimov/3sMoneyTests) | TypeScript | an independent audit of a fintech website: functional, responsive, accessibility, performance, SEO, links, GDPR consent; 10 documented defects |
+| [android-testing](https://github.com/NailKarimov/android-testing) | Kotlin | an own Android app: JUnit, Espresso and Appium 3 on an emulator in GitHub Actions; 33 tests, 7/7 planted bugs caught |
+
+### The same ideas in other languages
+
+| Project | Language | What it shows |
+| --- | --- | --- |
+| [python-testing](https://github.com/NailKarimov/python-testing) | Python | an own Bookshop API: pytest + httpx, Hypothesis against an oracle, Schemathesis, Locust (found a threading bug under load); 77 tests, 11/11 planted bugs caught |
+| [java-testing](https://github.com/NailKarimov/java-testing) | Java | an own Library API: REST Assured, WireMock with call counts, Cucumber, Pact JVM; 89 tests, 88 % coverage, 14/14 planted bugs caught |
+| [dotnet-testing](https://github.com/NailKarimov/dotnet-testing) | C# | an own booking app on ASP.NET Core: WebApplicationFactory with a fake clock, Reqnroll, Playwright for .NET; 54 tests, 12/12 planted bugs caught |
+| [go-testing](https://github.com/NailKarimov/go-testing) | Go | own microservices behind a fault-injecting proxy: idempotent retries, circuit breaker, `-race`, fuzzing; 94.5 % coverage, 14/14 planted bugs caught |
+
+The [qa-project-template](https://github.com/NailKarimov/qa-project-template) is the starter for new projects and
+holds the [portfolio standard](https://github.com/NailKarimov/qa-project-template/blob/main/docs/portfolio-standard.md).
+
+## Stack
+
+Playwright · REST Assured · pytest · NUnit · JUnit · Go `testing` · Espresso · Appium · Hypothesis · Schemathesis ·
+Pact · WireMock · Cucumber · Reqnroll · Bruno · k6 · Locust · Lighthouse CI · axe-core · Pa11y · Testcontainers ·
+Docker · Prometheus · Grafana · Allure · GitHub Actions
