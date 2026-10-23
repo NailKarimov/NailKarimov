@@ -5,6 +5,8 @@ automation, in banking and fintech, telecom billing, automotive e-commerce and a
 test strategies, build maintainable automation frameworks, and turn test results into clear reports and quality
 metrics.
 
+**Open to work:** QA automation and SDET roles in Riga or remote. [Contact me on LinkedIn](https://www.linkedin.com/in/karimovnail).
+
 | | |
 | --- | --- |
 | **Experience** | SEB (test automation, C# and SQL, regulatory reporting) · Sun Finance (QA lead, PHP automation for loan platforms in 8 countries) · Tele2 (E2E billing migration) · Complevo for Mercedes-Benz · fintech and access-control platforms |
