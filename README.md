@@ -7,6 +7,8 @@ metrics.
 
 **Open to work:** QA automation and SDET roles in Riga or remote. [Contact me on LinkedIn](https://www.linkedin.com/in/karimovnail).
 
+**Portfolio at a glance:** [nailkarimov.github.io](https://nailkarimov.github.io/) · all bug reports on the [defect board](https://github.com/users/NailKarimov/projects/2).
+
 | | |
 | --- | --- |
 | **Experience** | SEB (test automation, C# and SQL, regulatory reporting) · Sun Finance (QA lead, PHP automation for loan platforms in 8 countries) · Tele2 (E2E billing migration) · Complevo for Mercedes-Benz · fintech and access-control platforms |
