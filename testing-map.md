@@ -17,7 +17,7 @@ where the published report is. Every repository runs in GitHub Actions; reports 
 | Security | OWASP API Security Top 10 (2023), OAuth 2.0 (RFC 6749) with PKCE (RFC 7636), JWT (RFC 7519) | ledger-api-testing, microservices-testing, api-test-automation, ui-e2e-testing | own auth server, header checks, BOLA tests | Allure |
 | Mocking and service virtualisation | — | java-testing | WireMock (call counts, faults, stateful scenarios) | Allure |
 | UI end-to-end | — | ui-e2e-testing, dotnet-testing | Playwright (TS, .NET), Page Object | Allure with traces and videos |
-| Accessibility | WCAG 2.2 AA, EN 301 549 | ui-e2e-testing, 3sMoneyTests | axe-core, Pa11y, keyboard-only flows | Allure, Pa11y summary |
+| Accessibility | WCAG 2.2 AA, EN 301 549 | ui-e2e-testing, web-quality-audit | axe-core, Pa11y, keyboard-only flows | Allure, Pa11y summary |
 | Visual regression | — | ui-e2e-testing | Playwright `toHaveScreenshot` | Allure diffs |
 | Web performance | Core Web Vitals (LCP, CLS, INP) | ui-e2e-testing | Lighthouse CI, user flows | Lighthouse reports |
 | Load and capacity | ISO/IEC 25010 performance efficiency | microservices-testing, python-testing | k6 → Prometheus → Grafana, Locust | Grafana snapshots, k6 dashboard |
@@ -25,14 +25,14 @@ where the published report is. Every repository runs in GitHub Actions; reports 
 | Concurrency | — | python-testing, java-testing, dotnet-testing, go-testing, ledger-api-testing | parallel requests, `-race` | CI |
 | BDD | Gherkin | java-testing, dotnet-testing | Cucumber, Reqnroll | Allure, Cucumber HTML |
 | Mobile (Android) | W3C WebDriver (Appium) | android-testing | JUnit, Espresso, Appium UiAutomator2 on an emulator | Allure, Espresso and Appium reports |
-| Privacy and consent | GDPR | 3sMoneyTests | Playwright | Allure |
-| Mutation checks (test quality) | — | every repository | planted-bug scripts | `mutants/result.md` on Pages |
+| Web quality audit: content, SEO, links | — | web-quality-audit | Playwright, a reference build | Allure |
+| Mutation checks (test quality) | — | every repository with an own system; web-quality-audit uses a reference build instead | planted-bug scripts, differential runs | `mutants/result.md` on Pages |
 
 ## By language
 
 | Language | Repository | Stack |
 | --- | --- | --- |
-| TypeScript | api-test-automation, contract-testing-lab, microservices-testing, ledger-api-testing, api-protocols-testing, ai-api-testing, ui-e2e-testing, 3sMoneyTests | Playwright, zod, Pact JS, k6 |
+| TypeScript | api-test-automation, contract-testing-lab, microservices-testing, ledger-api-testing, api-protocols-testing, ai-api-testing, ui-e2e-testing, web-quality-audit | Playwright, zod, Pact JS, k6 |
 | Python | python-testing | pytest, Hypothesis, Schemathesis, Locust, Appium client |
 | Java | java-testing | JUnit 5, REST Assured, WireMock, Cucumber, Pact JVM, JaCoCo |
 | C# | dotnet-testing | NUnit, WebApplicationFactory, Reqnroll, Playwright .NET |
