@@ -51,7 +51,7 @@ metrics.
 
 | Project | Language | What it shows |
 | --- | --- | --- |
-| [ui-e2e-testing](https://github.com/NailKarimov/ui-e2e-testing) | TypeScript | OWASP Juice Shop in 5 browsers and devices: Page Objects with role locators, API login, accessibility to WCAG 2.2 AA, visual regression, Lighthouse CI budgets; 217 tests, 22 defects including a DOM XSS |
+| [ui-e2e-testing](https://github.com/NailKarimov/ui-e2e-testing) | TypeScript | OWASP Juice Shop in 5 browsers and devices: Page Objects with role locators, API login, accessibility to WCAG 2.2 AA, visual regression, Lighthouse CI budgets; 217 tests, 20 defects including a DOM XSS |
 | [web-quality-audit](https://github.com/NailKarimov/web-quality-audit) | TypeScript | a web quality audit of a training shop, run on its bug build and on its clean build as the reference: functional, content, accessibility, SEO, responsive, speed, API; 86 runs, 17 defects |
 | [android-testing](https://github.com/NailKarimov/android-testing) | Kotlin | an own Android app: JUnit, Espresso and Appium 3 on an emulator in GitHub Actions; 33 tests, 7/7 planted bugs caught |
 
