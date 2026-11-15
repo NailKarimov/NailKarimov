@@ -13,9 +13,9 @@ metrics.
 | --- | --- |
 | **Experience** | SEB (test automation, C# and SQL, regulatory reporting) · Sun Finance (QA lead, PHP automation for loan platforms in 8 countries) · Tele2 (E2E billing migration) · Complevo for Mercedes-Benz · fintech and access-control platforms |
 | **Programming languages** | TypeScript · Python · Java · C# · Go · Kotlin · SQL · PHP |
-| **Testing** | UI and mobile · REST, GraphQL, gRPC, WebSocket, MCP · contracts · databases · security · accessibility · performance and load · chaos · BDD |
-| **Standards** | ISO/IEC/IEEE 29119 · ISO/IEC 25010 · WCAG 2.2 AA / EN 301 549 · OWASP API Top 10 · OAuth 2.0 · Core Web Vitals |
-| **Portfolio** | 13 repositories, all in GitHub Actions with published reports. [Testing map](testing-map.md) ([interactive](https://nailkarimov.github.io/api-test-automation/testing-map.html)) · [toolbox](https://nailkarimov.github.io/api-test-automation/toolbox.html) |
+| **Testing** | UI and mobile · REST, GraphQL, gRPC, WebSocket, MCP · device protocols (Modbus RTU/TCP, SunSpec) · contracts · databases · security · accessibility · performance and load · chaos · BDD |
+| **Standards** | ISO/IEC/IEEE 29119 · ISO/IEC 25010 · WCAG 2.2 AA / EN 301 549 · OWASP API Top 10 · OAuth 2.0 · Core Web Vitals · Modbus · SunSpec |
+| **Portfolio** | 14 repositories, all in GitHub Actions with published reports. [Testing map](testing-map.md) ([interactive](https://nailkarimov.github.io/api-test-automation/testing-map.html)) · [toolbox](https://nailkarimov.github.io/api-test-automation/toolbox.html) |
 
 ## How every project is built
 
@@ -55,6 +55,12 @@ metrics.
 | [web-quality-audit](https://github.com/NailKarimov/web-quality-audit) | TypeScript | a web quality audit of a training shop, run on its bug build and on its clean build as the reference: functional, content, accessibility, SEO, responsive, speed, API; 86 runs, 17 defects |
 | [android-testing](https://github.com/NailKarimov/android-testing) | Kotlin | an own Android app: JUnit, Espresso and Appium 3 on an emulator in GitHub Actions; 33 tests, 7/7 planted bugs caught |
 
+### Devices and energy protocols
+
+| Project | Language | What it shows |
+| --- | --- | --- |
+| [solar-inverter-testing](https://github.com/NailKarimov/solar-inverter-testing) | Python | an own simulator of a 5 kW solar inverter (Modbus RTU and TCP, SunSpec map) tested by three independent clients: hand-built frames, pymodbus and the official SunSpec client; grid-loss and over-temperature safety, power limits, fuzzing; 359 tests on three links, 38/38 planted bugs caught. [A visual page](https://nailkarimov.github.io/solar-inverter-testing/solar-inverter.html) explains the run to a reader with no technical background |
+
 ### The same ideas in other languages
 
 | Project | Language | What it shows |
@@ -70,7 +76,7 @@ holds the [portfolio standard](https://github.com/NailKarimov/qa-project-templat
 ## Stack
 
 Playwright · REST Assured · pytest · NUnit · JUnit · Go `testing` · Espresso · Appium · Hypothesis · Schemathesis ·
-Pact · WireMock · Cucumber · Reqnroll · Bruno · k6 · Locust · Lighthouse CI · axe-core · Pa11y · Testcontainers ·
+Pact · WireMock · Cucumber · Reqnroll · Bruno · pymodbus · pysunspec2 · k6 · Locust · Lighthouse CI · axe-core · Pa11y · Testcontainers ·
 Docker · Prometheus · Grafana · Allure · GitHub Actions · Jira · Zephyr · Confluence · Azure Pipelines · Jenkins
 
 ## Contact
