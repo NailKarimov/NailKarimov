@@ -9,12 +9,15 @@ where the published report is. Every repository runs in GitHub Actions; reports 
 | Functional API testing | ISO/IEC/IEEE 29119-4 techniques: boundary values, equivalence classes, decision tables | api-test-automation, python-testing, java-testing, dotnet-testing, go-testing | Playwright, pytest + httpx, REST Assured, NUnit + WebApplicationFactory, Go httptest | Allure, JaCoCo, coverage HTML |
 | API collections | — | api-test-automation | Bruno (`bru run`) | Allure + Bruno HTML |
 | Contract testing | OpenAPI 3, Pact specification v3 | contract-testing-lab, java-testing | Schemathesis, oasdiff, Pact JS, Pact JVM | pact files, oasdiff reports |
-| Property-based testing and fuzzing | OpenAPI-driven generation | contract-testing-lab, python-testing, go-testing, solar-inverter-testing | Schemathesis, Hypothesis, `go test -fuzz` | Schemathesis report, CI logs |
+| Property-based testing and fuzzing | OpenAPI-driven generation | contract-testing-lab, python-testing, go-testing, solar-inverter-testing, ev-charging-testing | Schemathesis, Hypothesis, `go test -fuzz` | Schemathesis report, CI logs |
 | GraphQL | GraphQL specification | api-test-automation | Playwright, GraphQL Inspector | Allure |
 | gRPC, WebSocket, SSE | gRPC status codes, RFC 6455, HTML SSE | api-protocols-testing | grpc-js, buf, ws | Allure |
 | Device protocols | MODBUS Application Protocol V1.1b3, MODBUS over Serial Line, MODBUS Messaging on TCP/IP | solar-inverter-testing | own client with raw frames, pymodbus, socat virtual serial ports | Allure, visual page with the recorded frames |
+| Device protocols over WebSocket | OCPP 1.6 Edition 2 (JSON), OCPP 2.0.1 Edition 3 | ev-charging-testing | own OCPP-J codec, websockets, the reference `ocpp` library at the other end | Allure, visual page with the recorded messages |
 | Conformance and interoperability of a device map | SunSpec Device Information Model, models 1, 101, 120, 123 | solar-inverter-testing | pysunspec2 (official client and model definitions) | Allure |
+| Schema conformance against a published standard | the JSON schemas shipped with OCPP 1.6 and 2.0.1 (206 files) | ev-charging-testing | jsonschema, the schemas read out of the `ocpp` package | Allure |
 | Safety functions of a device | the simulator's datasheet: anti-islanding, reconnect delay, over-temperature trip | solar-inverter-testing | pytest with a simulated clock, boundary values | Allure |
+| Control-pilot states and current limits | IEC 61851-1: states A/B/C/E, the 6 A floor below which a station must pause | ev-charging-testing | pytest with a simulated clock, boundary values, charging profiles | Allure, visual page |
 | Hardware-in-the-loop | — | solar-inverter-testing, qa-project-template | the same suite over a real RS-485 line (two USB adapters) | run at the bench |
 | AI interfaces | Model Context Protocol, OWASP Top 10 for LLM applications | ai-api-testing | MCP Inspector, evals on Claude | Allure, eval results |
 | Database and integration | ACID transactions | ledger-api-testing, python-testing | Testcontainers + PostgreSQL, SQLite | Allure |
@@ -37,7 +40,7 @@ where the published report is. Every repository runs in GitHub Actions; reports 
 | Language | Repository | Stack |
 | --- | --- | --- |
 | TypeScript | api-test-automation, contract-testing-lab, microservices-testing, ledger-api-testing, api-protocols-testing, ai-api-testing, ui-e2e-testing, web-quality-audit | Playwright, zod, Pact JS, k6 |
-| Python | python-testing, solar-inverter-testing | pytest, Hypothesis, Schemathesis, Locust, Appium client, pymodbus, pysunspec2 |
+| Python | python-testing, solar-inverter-testing, ev-charging-testing | pytest, Hypothesis, Schemathesis, Locust, Appium client, pymodbus, pysunspec2, websockets, jsonschema, `ocpp` |
 | Java | java-testing | JUnit 5, REST Assured, WireMock, Cucumber, Pact JVM, JaCoCo |
 | C# | dotnet-testing | NUnit, WebApplicationFactory, Reqnroll, Playwright .NET |
 | Go | go-testing | `testing`, httptest, `-race`, fuzzing, benchmarks |

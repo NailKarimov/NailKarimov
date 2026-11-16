@@ -13,9 +13,9 @@ metrics.
 | --- | --- |
 | **Experience** | SEB (test automation, C# and SQL, regulatory reporting) · Sun Finance (QA lead, PHP automation for loan platforms in 8 countries) · Tele2 (E2E billing migration) · Complevo for Mercedes-Benz · fintech and access-control platforms |
 | **Programming languages** | TypeScript · Python · Java · C# · Go · Kotlin · SQL · PHP |
-| **Testing** | UI and mobile · REST, GraphQL, gRPC, WebSocket, MCP · device protocols (Modbus RTU/TCP, SunSpec) · contracts · databases · security · accessibility · performance and load · chaos · BDD |
-| **Standards** | ISO/IEC/IEEE 29119 · ISO/IEC 25010 · WCAG 2.2 AA / EN 301 549 · OWASP API Top 10 · OAuth 2.0 · Core Web Vitals · Modbus · SunSpec |
-| **Portfolio** | 14 repositories, all in GitHub Actions with published reports. [Testing map](testing-map.md) ([interactive](https://nailkarimov.github.io/api-test-automation/testing-map.html)) · [toolbox](https://nailkarimov.github.io/api-test-automation/toolbox.html) |
+| **Testing** | UI and mobile · REST, GraphQL, gRPC, WebSocket, MCP · device protocols (Modbus RTU/TCP, SunSpec, OCPP 1.6 and 2.0.1) · contracts · databases · security · accessibility · performance and load · chaos · BDD |
+| **Standards** | ISO/IEC/IEEE 29119 · ISO/IEC 25010 · WCAG 2.2 AA / EN 301 549 · OWASP API Top 10 · OAuth 2.0 · Core Web Vitals · Modbus · SunSpec · OCPP · IEC 61851-1 |
+| **Portfolio** | 15 repositories, all in GitHub Actions with published reports. [Testing map](testing-map.md) ([interactive](https://nailkarimov.github.io/api-test-automation/testing-map.html)) · [toolbox](https://nailkarimov.github.io/api-test-automation/toolbox.html) |
 
 ## How every project is built
 
@@ -60,6 +60,7 @@ metrics.
 | Project | Language | What it shows |
 | --- | --- | --- |
 | [solar-inverter-testing](https://github.com/NailKarimov/solar-inverter-testing) | Python | an own simulator of a 5 kW solar inverter (Modbus RTU and TCP, SunSpec map) tested by three independent clients: hand-built frames, pymodbus and the official SunSpec client; grid-loss and over-temperature safety, power limits, fuzzing; 359 tests on three links, 38/38 planted bugs caught. [A visual page](https://nailkarimov.github.io/solar-inverter-testing/solar-inverter.html) explains the run to a reader with no technical background |
+| [ev-charging-testing](https://github.com/NailKarimov/ev-charging-testing) | Python | an own simulator of an EV charge point speaking OCPP 1.6J and 2.0.1 over WebSocket: every message judged by the JSON schemas published with the standard, the reference `ocpp` library as the counterparty both ways; sessions, loss of network mid-charge, smart-charging limits, the 6 A floor of IEC 61851-1; 269 tests in four passes, 41/41 planted bugs caught. [A visual page](https://nailkarimov.github.io/ev-charging-testing/ev-charging.html) lets a reader plant a bug and watch a check turn red |
 
 ### The same ideas in other languages
 
